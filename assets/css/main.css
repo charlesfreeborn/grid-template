@@ -74,6 +74,7 @@ body {
   background-color: blanchedalmond;
   gap: 10px;
   min-height: 200px;
+  height: 100vh;
 }
 
 .flex-box1 {
@@ -105,6 +106,7 @@ body {
   background-color: burlywood;
   position: relative;
   /* align-items: end; */
+  height: 100vh;
 }
 
 .grid-box1,
@@ -115,11 +117,18 @@ body {
   padding: 20px;
 }
 
+.grid-box1{
+  grid-column: 1 / 5;
+  grid-row: 1 /2;
+}
+
 .grid-box3 {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+
+  /* grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 3; */
   /* top: 40px; */
   /* left: 40px; */
   /* position: absolute; */
